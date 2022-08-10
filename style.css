@@ -30,14 +30,16 @@ img {
   height: 30vh;
   background-image: url(https://images.unsplash.com/photo-1444882158336-bcfbd9298309?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb);
   background-position: bottom center;
+  background-size: cover;
 }
 
 .jumbotron h1 {
   position: relative;
   top: 74px;
   margin: 0;
-  font-size: 4rem;
+  font-size: 5rem;
   letter-spacing: 2px;
+  text-shadow: 2px 4px 2px grey;
 }
 
 .breadcrumb li {
@@ -87,6 +89,7 @@ p {
   margin-top: 60px auto;
   width: 70%;
   margin: 0 auto;
+  margin-bottom: 100px;
 }
 
 .hotel .hotel-img {
@@ -110,4 +113,12 @@ p {
   position: relative;
   top: 24px;
   font-size: 2rem;
+}
+
+/* footer */
+
+footer {
+  height: 300px;
+  background-color: #d7263d;
+  width: 100%;
 }
