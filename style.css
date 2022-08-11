@@ -31,6 +31,7 @@ img {
   background-image: url(https://images.unsplash.com/photo-1444882158336-bcfbd9298309?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb);
   background-position: bottom center;
   background-size: cover;
+  margin-bottom: 100px;
 }
 
 .jumbotron h1 {
@@ -42,19 +43,62 @@ img {
   text-shadow: 2px 4px 2px grey;
 }
 
-.breadcrumb li {
-  margin: 10px 0;
-  padding: 30px 10px;
-  display: inline-block;
-  font-weight: 400;
-  font-size: 18px;
+/* breadscrum */
+.breadcrumb {
   text-align: left;
+  position: absolute;
+  left: 12%;
+  top: 35%;
+}
+.breadcrumb li {
+  float: left;
 }
 
-.breadcrumb li + li::before {
-  content: ">";
+.breadcrumb a {
+  color: #fff;
+  background: #d7263d;
+  text-decoration: none;
+  position: relative;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  margin-right: 15px;
+  padding: 0 5px;
 }
 
+.breadcrumb a::before,
+.breadcrumb a::after {
+  content: "";
+  position: absolute;
+  border-color: #d7263d;
+  border-style: solid;
+  border-width: 15px 5px;
+}
+
+.breadcrumb a::before {
+  left: -10px;
+  border-left-color: transparent;
+}
+.breadcrumb a::after {
+  left: 100%;
+}
+
+.breadcrumb a::after {
+  left: 100%;
+  border-color: transparent;
+  border-left-color: #d7263d;
+}
+
+.breadcrumb a:hover {
+  background-color: grey;
+}
+.breadcrumb a:hover::before {
+  border-color: grey;
+  border-left-color: transparent;
+}
+.breadcrumb a:hover::after {
+  border-left-color: grey;
+}
 /* Content */
 
 h2 {
@@ -118,7 +162,17 @@ p {
 /* footer */
 
 footer {
-  height: 300px;
+  text-align: center;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  padding: 50px 0;
+  height: 180px;
   background-color: #d7263d;
   width: 100%;
+}
+
+.credit {
+  position: relative;
+  left: 100px;
 }
