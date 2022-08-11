@@ -166,13 +166,13 @@ footer {
   /* display: flex;
   align-items: center;
   justify-content: center; */
-  padding: 50px 0;
-  height: 180px;
+  padding: 20px 0;
+  height: 100px;
   background-color: #d7263d;
   width: 100%;
 }
 
 .credit {
   position: relative;
-  left: 100px;
+  left: 40%;
 }
